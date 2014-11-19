@@ -12,24 +12,24 @@
 	
 	@font-face {
 		font-family: 'HelveticaLight';
-		src: url('font/HelveticaNeueLTStd-Lt.otf');
+		src: url('../font/HelveticaNeueLTStd-Lt.otf');
 	}
 	
 	@font-face {
 		font-family: 'HelveticaUltraLight';
-		src: url('font/HelveticaNeueLTStd-UltLt.otf');
+		src: url('../font/HelveticaNeueLTStd-UltLt.otf');
 	}
 	
 	@font-face {
 		font-family: 'HelveticaMedium';
-		src: url('font/HelveticaNeueLTStd-Md.otf');
+		src: url('../font/HelveticaNeueLTStd-Md.otf');
 	}
 	
 	body {
    		font-family: 			'HelveticaLight', Helvetica, Arial; 
    		font-weight: 			300;
    		color:					#fff;
-   		background:				url('webMockupBackgroundOnly.jpg') fixed center center no-repeat;
+   		background:				url('../img/background2.jpg') fixed center center no-repeat;
 		background-size:		cover;
 		margin: 				0;
 		padding: 				0;
