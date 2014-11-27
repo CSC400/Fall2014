@@ -11,14 +11,14 @@
         	<tr><th>Title</th><th>Podium</th><th>Projection</th><th>Seats</th><th>Stadium</th>
         	<th>Completion Date</th><th>HQ Audio</th></tr>
 
-        	<?php 
+        	<?php
         	foreach($allRfps as $rfp){
 
         		$hq = ($rfp["hqAudio"]==true ? "Yes" : "No");
         		$stadium = ( $rfp["stadium"]==true ? "Yes" : "No");
 
         		echo "<tr>";
-        		//echo "<td>" . $rfp["RfpNum"] . "</td>"; 
+        		//echo "<td>" . $rfp["RfpNum"] . "</td>";
         		echo "<td>" . $rfp["title"] . "</td>";
         		echo "<td>" . $rfp["podiumType"] . "</td>";
         		echo "<td>" . $rfp["projection"] . "</td>";
@@ -30,7 +30,7 @@
 							<input type="hidden" name="action" value="viewSingleRfp">
 							<input type="hidden" name="RfpNum" value="' . $rfp["RfpNum"] . '">
 							<input type="submit" class="btn respondButton" value="View">
-						</form></td></tr>'; 
+						</form></td></tr>';
 
         	}?>
 

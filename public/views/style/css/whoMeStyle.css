@@ -3,38 +3,128 @@
 		box-sizing: 			border-box;
 	}
 
+	@font-face {
+		font-family: 'HelveticaLight';
+		src: url('../fonts/HelveticaNeueLTStd-Lt.otf');
+	}
+
+	@font-face {
+		font-family: 'HelveticaUltraLight';
+		src: url('../fonts/HelveticaNeueLTStd-UltLt.otf');
+	}
+
+	@font-face {
+		font-family: 'HelveticaMedium';
+		src: url('../fonts/HelveticaNeueLTStd-Md.otf');
+	}
+
+	body {
+   		font-family: 			'HelveticaLight', Helvetica, Arial;
+   		font-weight: 			300;
+   		color:					#fff;
+   		background:				url('../images/background2.jpg') fixed center center no-repeat;
+		background-size:		cover;
+		margin: 				0;
+		padding: 				0;
+		overflow: 				hidden;
+		height:					100%;
+	}
 	html {
 		height: 				100%;
 		width: 					100%;
 		margin: 				0;
 		padding: 				0;
 	}
-	
-	@font-face {
-		font-family: 'HelveticaLight';
-		src: url('../font/HelveticaNeueLTStd-Lt.otf');
+	textarea{
+		color:black;
 	}
-	
-	@font-face {
-		font-family: 'HelveticaUltraLight';
-		src: url('../font/HelveticaNeueLTStd-UltLt.otf');
+
+
+	.arrow {
+		margin: 				-64px auto 0 auto;
+		text-align: 			center;
+		transition:				margin 0.5s;
 	}
-	
-	@font-face {
-		font-family: 'HelveticaMedium';
-		src: url('../font/HelveticaNeueLTStd-Md.otf');
+	.clear{
+		clear:both;
 	}
-	
-	body {
-   		font-family: 			'HelveticaLight', Helvetica, Arial; 
-   		font-weight: 			300;
-   		color:					#fff;
-   		background:				url('../img/background2.jpg') fixed center center no-repeat;
-		background-size:		cover;
-		margin: 				0;
-		padding: 				0;
+	.logoBlue {
+		color:					#82d2ea;
 	}
-	
+	.logoGreen {
+		color:					#6dc593;
+	}
+	.nav{
+		margin-top:			5%;
+		margin-bottom: 		.2%;
+		border:				none;
+	}
+	.nav li{
+		margin-right:		.2%;
+	}
+	.pContent{
+		height:				100%;
+		background-color: 	rgba(0,0,0,0.5);
+		color:				white;
+	}
+	.respondButton{
+		width:100%;
+		height:7%;
+		background-color: rgba(0,0,0,0.3);
+		padding:3%;
+	}
+	.respondButton:hover{
+		cursor:pointer;
+	}
+	.respondButton p{
+		padding:0;
+		margin-top:10%;
+		margin-left:6%;
+	}
+	.sectionTitle{
+		margin-top:			3%;
+		margin-bottom:		4%;
+		text-align:			center;
+	}
+	.smallForms input{
+		width:				30%;
+		margin-left:		0;
+	}
+	.tab{
+		border:				none;
+		background-color: 	rgba(0,0,0,0.5);
+		color: 				white;
+		border-radius: 		0;
+
+	}
+
+	#accountForm{
+		margin-left:20%;
+	}
+
+	#accountForm label{
+		width:25%;
+	}
+	#addPartner{
+		position:fixed;
+		right:2%;
+		top:10%;
+		border-radius:50%;
+		width: 30px;
+		height: 30px;
+		background-color: gray;
+		margin:0;
+		padding:0;
+	}
+	#addPartner h3{
+		margin:0 !important;
+		padding:0 !important;
+		margin-left:8px !important;
+		margin-top:4px !important;
+	}
+	#addPartner:hover{
+		cursor:pointer;
+	}
 	#container {
 		width: 					100%;
 		height: 				100%;
@@ -42,17 +132,100 @@
 		padding: 				24px 0 0 0;
 		overflow: 				none;
 	}
+	#clientBlock{
+		max-width: 				400px;
+		width: 					100%;
+		height: 				400px;
+		background: 			rgba(0,0,0,0.5);
+		float: 					left;
+	}
+	#clientText{
+
+	}
+	#closeForm{
+		width:4%;
+		height:3%;
+		background-color: black;
+		color:white;
+	}
+	#closeForm:hover{
+		cursor:pointer;
+	}
+	#doResponse{
+		padding:1.2%;
+		padding-left:1.4%;
+		width:30%;
+		height:10%;
+		background-color: black;
+		margin-bottom: 2%
+	}
+	#doResponse:hover{
+		cursor:pointer;
+	}
+	#fileAndSubmit{
+		position: fixed;
+		top:50%;
+		left:5%;
+		width:60%;
+		height:40%;
+	}
+
+	#fileAndSubmit input{
+		margin-bottom:2%;
+	}
+	#footer {
+		height: 				32px;
+  		margin: 				0;
+  		position:				fixed;
+  		width: 					100%;
+  		bottom: 				0;
+  		left: 					0;
+  		padding: 				12px;
+  		background: 			rgba(0,0,0,0.5);
+
+	}
+	#footerLeft{
+		float:					left;
+		font-size: 				12px;
+	}
+	#footerRight{
+		float:					right;
+		text-transform: 		uppercase;
+	}
+	#left{
+		margin-left:2%;
+		width:30%;
+		float:left;
+	}
+	#logout{
+		background: rgba(0,0,0,0);
+		border:none;
+		font-weight: bold;
+	}
+	#mainContent {
+		margin: 				72px auto;
+		max-width: 				900px;
+		width: 					100%;
+		overflow:		 		auto;
+	}
+	#middle{
+		margin-left:2%;
+		width:30%;
+		float:left;
+	}
+	#myButton{
+		margin-top:3%;
+		margin-left:		25%;
+		width:				8%;
+		background-color:	rgba(0,0,0,0.6);
+		color:				white;
+		border:				none;
+	}
 	#navBar {
 		height: 				80px;
   		margin: 				0;
   		background: 			rgba(0,0,0,0.5);
   		overflow: auto;
-	}
-	#navText {
-		font-size:				36px;
-		color:					#6dc593;
-		padding: 				20px 0 0 24px;
-		float: left;
 	}
 	#navLinks {
 		float: 					right;
@@ -73,34 +246,52 @@
 		background-color: 		rgba(255,255,255,0.1);
 		color: 					#fff;
 	}
-	.logoBlue {
-		color:					#82d2ea;
-	}
-	.logoGreen {
+	#navText {
+		font-size:				36px;
 		color:					#6dc593;
+		padding: 				20px 0 0 24px;
+		float: left;
 	}
-	
-	#vendorText, #clientText {
-		opacity: 				0;
-		padding: 				0 40px;
-		text-align: 			center;
-		font-size: 				20px;
-		transition: 			opacity 0.5s;
+	#responseForm{
+		margin-top:2%;
 	}
-	
-	#mainContent {
-		margin: 				72px auto;
-		max-width: 				900px;
-		width: 					100%;
-		overflow:		 		auto;
+	#responseForm input{
+		width:50%;
+		margin-left: 5%;
 	}
-	
-	.arrow {
-		margin: 				-64px auto 0 auto;
-		text-align: 			center;
-		transition:				margin 0.5s;
+	#responseForm label{
+		width:30%;
+		margin-left:0;
 	}
-	
+	#right{
+		margin-left:2%;
+		width:30%;
+		float:right;
+	}
+	#short{
+		width:2%;
+	}
+	#slideUp{
+		display:none;
+		position:absolute;
+		top:0%;
+		left:0%;
+		width:100%;
+		background-color: rgba(0,0,0,1);
+		padding:4%;
+		padding-top:0;
+		z-index: 2;
+	}
+
+	#slideUp label{
+		margin-left:20px;
+		width:10%;
+	}
+	#submitForm{
+		width:10% !important;
+		border-radius:5%;
+		background-color: gray;
+	}
 	#vendorBlock{
 		max-width: 				400px;
 		margin:					0 100px 0 0;
@@ -120,35 +311,23 @@
 		transition: margin 0.5s;
 	}
 	#vendorText {
-		
+
 	}
-	#clientBlock{
-		max-width: 				400px;
-		width: 					100%;
-		height: 				400px;
-		background: 			rgba(0,0,0,0.5);
-		float: 					left;
+	#vendorText, #clientText {
+		opacity: 				0;
+		padding: 				0 40px;
+		text-align: 			center;
+		font-size: 				20px;
+		transition: 			opacity 0.5s;
 	}
-	
-	#clientText{
-		
+	#welcome{
+		position:absolute;
+		right:0%;
+		padding:2%;
+		padding-bottom:0;
+		margin-bottom: 0;
+
 	}
-	#footer {
-		height: 				32px;
-  		margin: 				0;
-  		position:				fixed;
-  		width: 					100%;
-  		bottom: 				0;
-  		left: 					0;
-  		padding: 				12px;
-  		background: 			rgba(0,0,0,0.5);
-  		
-	}
-	#footerLeft{
-		float:					left;
-		font-size: 				12px;
-	}
-	#footerRight{
-		float:					right;
-		text-transform: 		uppercase;
+	#welcome form{
+		width:5%;
 	}
