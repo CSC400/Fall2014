@@ -1,0 +1,63 @@
+form {
+    float:right;
+    margin: 15% 15em 0em;
+}
+input:focus, textarea:focus {
+    border: .13em solid #97d6eb;
+}
+input, textarea {
+    height: 2em;
+    background: #efefef;
+    border: .05em solid #dedede;
+    padding: .2em;
+    margin-top: .2em;
+    font-size: 0.9em;
+    color: #3a3a3a;
+    border-radius: .2em;
+    -webkit-border-radius:.2em;
+}
+label {
+    text-align: left;
+}
+
+.BlockTitle{
+    text-shadow:            .05em .05em .05em rgba(0,0,0,0.5);
+    margin:                 158px 0 34px 100px;
+    font-size:              60px;
+    font-family:            'HelveticaUltraLight', Helvetica, Arial;
+    text-transform:         uppercase;
+    letter-spacing:         .05em;
+    transition:             margin 0.5s;
+}
+.container {
+    width:                  100%;
+    margin:                 0;
+    padding:                0 0 0 2em;
+}
+.dividingLine{
+    width:                  100%;
+}
+.loginBlock{
+    width:                  35%;
+    height:                 400px;
+    float:                  left;
+}
+.submit {
+    width: 127px;
+    height: 48px;
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    border: none;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.submit:hover {
+    opacity: 0.9;
+}
+.TextnBlock{
+    opacity:                0;
+    padding:                0 40px;
+    text-align:             center;
+    font-size:              20px;
+    transition:             opacity 0.5s;
+}

@@ -1,0 +1,60 @@
+.logoBlue {
+    color:                  #82d2ea;
+}
+.logoGreen {
+    color:                  #6dc593;
+}
+
+#footer {
+    height:                 32px;
+    margin:                 0;
+    position:               fixed;
+    width:                  100%;
+    bottom:                 0;
+    left:                   0;
+    padding:                12px;
+    background:             rgba(0,0,0,0.5);
+}
+#footerLeft{
+    float:                  left;
+    font-size:              12px;
+}
+#footerRight{
+    float:                  right;
+    text-transform:         uppercase;
+}
+#logo {
+    height:                 40px;
+    background:             none;
+}
+#navBar {
+    height:                 80px;
+    margin:                 0;
+    background:             rgba(0,0,0,0.5);
+    overflow: auto;
+}
+#navText {
+    font-size:              36px;
+    color:                  #6dc593;
+    padding:                20px 0 0 24px;
+    float: left;
+}
+#navLinks {
+    float:                  right;
+    height:                 100%;
+    margin:                 0 24px 0 0;
+}
+#navLinks a {
+    display:                block;
+    float:                  left;
+    height:                 100%;
+    padding:                32px 16px;
+    color:                  #fff;
+    text-decoration:        none;
+    transition:             background 0.5s;
+}
+#navLinks a:hover {
+    text-decoration:        none;
+    background-color:       rgba(255,255,255,0.1);
+    color:                  #fff;
+}

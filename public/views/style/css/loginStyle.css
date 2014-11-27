@@ -1,0 +1,263 @@
+
+	*, *:before, *:after {
+		box-sizing: 			border-box;
+	}
+
+	html {
+		height: 				100%;
+		width: 					100%;
+		margin: 				0;
+		padding: 				0;
+	}
+
+	button {
+		background-color: 		rgba(0,0,0,0.5);
+		color:					white;
+		border:					none;
+		height:					20px;
+		width:					80px;
+
+	}
+
+	@font-face {
+		font-family: 'HelveticaLight';
+		src: url('font/HelveticaNeueLTStd-Lt.otf');
+	}
+
+	@font-face {
+		font-family: 'HelveticaUltraLight';
+		src: url('font/HelveticaNeueLTStd-UltLt.otf');
+	}
+
+	@font-face {
+		font-family: 'HelveticaMedium';
+		src: url('font/HelveticaNeueLTStd-Md.otf');
+	}
+
+	body {
+   		font-family: 			'HelveticaLight', Helvetica, Arial;
+   		font-weight: 			300;
+   		color:					#fff;
+   		background:				url('webMockupBackgroundOnly.jpg') fixed center center no-repeat;
+		background-size:		cover;
+		margin: 				0;
+		padding: 				0;
+	}
+	#logo {
+		height:					40px;
+		background:				none;
+	}
+
+	#container {
+		width: 					100%;
+		height: 				100%;
+		margin: 				0;
+		padding: 				24px 0 0 0;
+		overflow: 				none;
+	}
+	#navBar {
+		height: 				80px;
+  		margin: 				0;
+  		background: 			rgba(0,0,0,0.5);
+  		overflow: auto;
+	}
+	#navText {
+		font-size:				36px;
+		color:					#6dc593;
+		padding: 				20px 0 0 24px;
+		float: left;
+	}
+	#navLinks {
+		float: 					right;
+		height: 				100%;
+		margin: 				0 24px 0 0;
+	}
+	#navLinks a {
+		display: 				block;
+		float:					left;
+		height: 				100%;
+		padding:  				32px 16px;
+		color: 					#fff;
+		text-decoration: 		none;
+		transition: 			background 0.5s;
+	}
+	#navLinks a:hover {
+		text-decoration: 		none;
+		background-color: 		rgba(255,255,255,0.1);
+		color: 					#fff;
+	}
+	.logoBlue {
+		color:					#82d2ea;
+	}
+	.logoGreen {
+		color:					#6dc593;
+	}
+
+	#vendorText, #clientText {
+		opacity: 				0;
+		padding: 				0 40px;
+		text-align: 			center;
+		font-size: 				20px;
+		transition: 			opacity 0.5s;
+	}
+
+	#mainContent {
+		margin: 				72px auto;
+		max-width: 				900px;
+		width: 					100%;
+		overflow:		 		auto;
+		background: 			rgba(0,0,0,0.5);
+	}
+
+	#welcomeBlock {
+		max-width: 				900px;
+		width: 					100%;
+		height: 				400px;
+		float:					left;
+	}
+	#welcomeHead, #comingSoon {
+		text-shadow: 			2px 2px 2px rgba(0,0,0,0.5);
+		margin-left:			312px;
+		margin-top:				100px;
+		font-size: 				60px;
+		font-family: 			'HelveticaUltraLight', Helvetica, Arial;
+		text-transform: 		uppercase;
+		letter-spacing: 		2px;
+	}
+	#comingSoon {
+		margin-left:			250px;
+		margin-top:				140px;
+	}
+	#welcomeText {
+		font-family: 			'HelveticaUltraLight', Helvetica, Arial;
+		margin-left:			235px;
+		margin-top:				20px;
+		font-size:				24px;
+	}
+	#proposalLink {
+		color:					#FFF;
+	}
+	#loginText {
+		padding:				50px 0 20px 0;
+		text-align: 			center;
+		font-size: 				15px;
+	}
+	#aboutText {
+		padding:				110px 70px 0 0;
+		text-align:				center;
+		font-size:				15px;
+	}
+
+	#signupText {
+		padding:				20px 0 0 0;
+		text-align:				center;
+
+	}
+
+	#logInput {
+		padding:				none;
+	}
+
+	#dividingLine{
+		width:					80%;
+		height:					2px;
+	}
+
+	#usernameInput {
+		margin: 				64px auto 0 auto;
+		text-align: 			center;
+	}
+
+	.arrow {
+		margin: 				-64px auto 0 auto;
+		text-align: 			center;
+		transition:				margin 0.5s;
+	}
+
+	#vendorBlock{
+		max-width: 				400px;
+		margin:					0 100px 0 0;
+		width: 					100%;
+		height: 				400px;
+		float:					left;
+	}
+	#vendorBlockTitle, #clientBlockTitle {
+		text-shadow: 			2px 2px 2px rgba(0,0,0,0.5);
+		margin: 				158px 0 34px 100px;
+		font-size: 				60px;
+		font-family: 			'HelveticaUltraLight', Helvetica, Arial;
+		text-transform: 		uppercase;
+		letter-spacing: 		2px;
+		transition: 			margin 0.5s;
+	}
+	#movedBlockTitle {
+		text-shadow: 			2px 2px 2px rgba(0,0,0,0.5);
+		margin: 				158px 0 34px 100px;
+		font-size: 				60px;
+		font-family: 			'HelveticaUltraLight', Helvetica, Arial;
+		text-transform: 		uppercase;
+		letter-spacing: 		2px;
+		transition: 			margin 0.5s;
+	}
+	#aboutBlockTitle {
+		text-shadow: 			2px 2px 2px rgba(0,0,0,0.5);
+		margin: 				163px 0 34px 110px;
+		font-size: 				60px;
+		font-family: 			'HelveticaUltraLight', Helvetica, Arial;
+		text-transform: 		uppercase;
+		letter-spacing: 		2px;
+		transition: 			margin 0.5s;
+	}
+	#movedBlockTitleC{
+		text-shadow: 			2px 2px 2px rgba(0,0,0,0.5);
+		margin: 				158px 0 34px 120px;
+		font-size: 				60px;
+		font-family: 			'HelveticaUltraLight', Helvetica, Arial;
+		text-transform: 		uppercase;
+		letter-spacing: 		2px;
+		transition: 			margin 0.5s;
+	}
+	#vendorText {
+
+	}
+	#clientBlock{
+		max-width: 				400px;
+		width: 					100%;
+		height: 				400px;
+		background: 			rgba(0,0,0,0.5);
+		float: 					left;
+	}
+	#loginBlock{
+		max-width:				400px;
+		width:					100%;
+		height:					400px;
+		float: 					left;
+	}
+	#loginInfo {
+		margin:					0 auto;
+	}
+	#usernameInput {
+		clear:both;
+	}
+	#clientText{
+
+	}
+	#footer {
+		height: 				32px;
+  		margin: 				0;
+  		position:				fixed;
+  		width: 					100%;
+  		bottom: 				0;
+  		left: 					0;
+  		padding: 				12px;
+  		background: 			rgba(0,0,0,0.5);
+
+	}
+	#footerLeft{
+		float:					left;
+		font-size: 				12px;
+	}
+	#footerRight{
+		float:					right;
+		text-transform: 		uppercase;
+	}

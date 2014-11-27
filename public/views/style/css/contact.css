@@ -1,0 +1,26 @@
+#mainContent {
+    margin:                 72px auto;
+    max-width:              900px;
+    width:                  100%;
+    overflow:               auto;
+    background:             rgba(0,0,0,0.5);
+}
+#welcomeBlock {
+    max-width:              900px;
+    width:                  100%;
+    height:                 400px;
+    float:                  left;
+}
+#welcomeHead, #comingSoon {
+    text-shadow:            2px 2px 2px rgba(0,0,0,0.5);
+    margin-left:            312px;
+    margin-top:             100px;
+    font-size:              60px;
+    font-family:            'HelveticaUltraLight', Helvetica, Arial;
+    text-transform:         uppercase;
+    letter-spacing:         2px;
+}
+#comingSoon {
+    margin-left:            250px;
+    margin-top:             140px;
+}

@@ -1,15 +1,21 @@
-.arrow {
-    margin:                 -64px auto 0 auto;
+#aboutBlockTitle {
+        text-shadow:            2px 2px 2px rgba(0,0,0,0.5);
+        margin:                 163px 0 34px 110px;
+        font-size:              60px;
+        font-family:            'HelveticaUltraLight', Helvetica, Arial;
+        text-transform:         uppercase;
+        letter-spacing:         2px;
+        transition:             margin 0.5s;
+    }
+#aboutText {
+    padding:                110px 70px 0 0;
     text-align:             center;
-    transition:             margin 0.5s;
+    font-size:                15px;
 }
-
-
-#clientBlock{
+#loginBlock{
     max-width:              400px;
     width:                  100%;
     height:                 400px;
-    background:             rgba(0,0,0,0.5);
     float:                  left;
 }
 #vendorBlock{
@@ -20,17 +26,7 @@
     background:             rgba(0,0,0,0.5);
     float:                  left;
 }
-#vendorBlockTitle, #clientBlockTitle {
-    text-shadow:            2px 2px 2px rgba(0,0,0,0.5);
-    margin:                 128px 0 24px 0;
-    text-align:             center;
-    font-size:              60px;
-    font-family:            'HelveticaUltraLight', Helvetica, Arial;
-    text-transform:         uppercase;
-    letter-spacing:         2px;
-    transition:             margin 0.5s;
-}
-#vendorText, #clientText {
+#vendorText{
     opacity:                0;
     padding:                0 40px;
     text-align:             center;
