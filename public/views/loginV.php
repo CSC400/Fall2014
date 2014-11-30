@@ -20,7 +20,7 @@
 
 <section class ="container">
 	<div class ="loginBlock" id="Block">
-		<h1  class ="BlockTitle" id="Title">Clients</h1>
+		<h1  class ="BlockTitle" id="Title">Vendors</h1>
 		<div class ="TextnBlock" id="Text">
 			Seek out the perfect jobs for your company. Browse through the proposals of schools in your states.
 		</div>
