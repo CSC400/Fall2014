@@ -26,7 +26,7 @@ var testrfp = {
 "repsonses" : "[reponsenum1, repsonsenum2]"
 }
 
-var testresponce = {
+var testresponse = {
 "responsenum" : " " //generated code
 “userid” : “”, //coming from user who made the repsonse
 “contact” : “John Doe”,
