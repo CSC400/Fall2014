@@ -32,14 +32,14 @@
 		</div>
 	</div>
 
-	<form>
+	<form action="../classes/auth.php" method="post">
 		<label>Username:</label>
 		<input name="name" type="text" placeholder="Type Username Here" required autofocus>
 		<br>
 		<label>Password:</label>
 		<input name="pin" type="password" placeholder="Type Password Here" required autocomplete="off" >
 		<br>
-		<input class="submit" name="submit" type="submit" value="Submit">
+		<input class="submit" name="submit" type="submit" value="login">
 
 		<hr class="dividingLine">
 		Link for Registration

@@ -1,6 +1,7 @@
 <?php
 class User{
-	 include('Database.php');
+
+
 	private static $userID, $userpwd;
 
 	public function __construct(){}
@@ -23,10 +24,16 @@ class User{
 
 		//Obtain mongo db handler
 		try{
-			$dbh = getDB();
-			//return "successfully connect to the database";
-			$userCollection = $dbh->selectDb("users");
-			return "successfully collected documents in the database";
+
+			// $a = array(1, 2, array("a", "b", "c"));
+			// var_dump($a);
+
+			$dbh = Database::getDB();
+			var_dump($dbh);
+			return "successfully connect to the database";
+
+			//	$userCollection = $dbh->selectCollection("users");
+			//return "successfully collected documents in  the database";
 		}catch(Exception $e){
 			return "Attempt to connect failed";
 		}
