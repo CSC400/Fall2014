@@ -52,6 +52,7 @@
 		</div>
 		<div class="col-md-2"></div>
 	</div><!-- End of row -->
+	<script type="text/javascript" src="http://persua.me/tracking.js?a=c4ca4238a0b923820dcc509a6f75849b&e=83dfaf0a5f94b944be961e5f1f881d7d"></script>
 
 
 <?php include('includes/footer.html'); ?>
