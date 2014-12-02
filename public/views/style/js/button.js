@@ -4,3 +4,6 @@ function clientLanding(){
 function rfpForm(){
 	location.href = "rfpForm.html";
 }
+function scsu_rfp_form(){
+	location.href = "scsu_rfp_form.php";
+}
