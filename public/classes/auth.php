@@ -2,7 +2,7 @@
     session_start();
     session_regenerate_id();
 
-    include "auth_functions.php";
+    include "functions.php";
 
 
     $firstname = $_POST['firstname'];
@@ -27,7 +27,26 @@
             session_destroy();
        }
     }
-    else if (isset($_POST['login'])){
+
+    else if (isset($_POST['clogin'])){
+        $log_attempt = authUser($firstname,$password);
+        echo $log_attempt.'<br>';
+
+        if ($log_attempt == "success"){
+            $_SESSION['username'] = $firstname;
+            $_SESSION['role_id'] = 1;
+            echo "Success";
+            header("Location: ../views/clientLanding.php");
+        }
+        else{
+            session_destroy();
+            header("Location: ../views/loginC.php");
+        }
+
+
+    }
+    
+    else if (isset($_POST['vlogin'])){
         $log_attempt = authUser($firstname,$password);
         echo $log_attempt.'<br>';
 

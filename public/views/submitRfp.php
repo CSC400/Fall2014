@@ -7,8 +7,7 @@
 	$contact = $_POST['firstName']." ".$_POST['lastName'];
 	$email = $_POST['emailAddress'];
 	$phone = $_POST['phoneNumber'];
-	$address = $_POST['streetAddress'];
-	$city = $_POST['city'];
+	$address = $_POST['streetAddress'].", ".$_POST['city'];
 	$rooms = $_POST['numberClassrooms'];
 	$seats = $_POST['numberSeats'];
 	$height = $_POST['height'];
@@ -25,8 +24,7 @@
 	
 	// var_dump($contact);
 	
-	$infoArray = array('Contact'=>$contact, 'rfpnum'=>25552, 'purpose'=>$style, 'projection'=>$projection,
-									'classnum'=>$rooms, 'stadium'=>$podium, 'budget'=>$maxbudget, 'compdate'=>$compdate);
+	$infoArray = array('contact'=>$contact, 'rfpnum'=>25552, 'email'=>$email, 'phone'=>$phone, 'address'=>$address, 'purpose'=>$style, 'projection'=>$projection, 'multimedia'=>$media, 'audio'=>$audio, 'classnum'=>$rooms, 'seats'=>$seats, 'height'=>$height, 'width'=>$width, 'length'=>$length, 'stadium'=>$podium, 'budget'=>$maxbudget, 'compdate'=>$compdate, 'summary'=>$summary);
 	var_dump($infoArray);
 
 	echo "\n This is the value stored in in style: "; var_dump($style);

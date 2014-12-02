@@ -26,14 +26,15 @@
 		</div>
 	</div>
 
-	<form>
+	<form action="../includes/auth.php" method ="post">
 		<label>Username:</label>
+		<!--<input type="hidden" name="action" value="login">-->
 		<input name="name" type="text" placeholder="Type Username Here"><!--required autofocus-->
 		<br>
 		<label>Password:</label>
 		<input name="pin" type="password" placeholder="Type Password Here"><!--required autocomplete="off"-->
 		<br>
-		<input onclick="clientLanding(); return false;" class="submit" name="submit" type="submit" value="Submit">
+		<input onclick="clientLanding(); return false;" class="submit" name="submit" type="submit" value="clogin">
 
 		<hr class="dividingLine">
 		Link for Registration
