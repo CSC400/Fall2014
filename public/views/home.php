@@ -1,4 +1,15 @@
-<?php include ('includes/header.html'); ?>
+<?php
+  include "../classes/db_conn.php";
+  include "../classes/user_functions.php";
+  include "../classes/vendor_functions.php";
+  include ('includes/header.html');
+
+  venderViewPermission();
+  //$response=getVendorResponsesCursor();
+  $myResponses=getVendorResponsesCursor();
+  var_dump($myResponses);
+  //
+?>
 
       <!-- Second row -->
       <div class="row">
@@ -7,8 +18,8 @@
           <h2 class="sectionTitle">Your Responses</h2>
           <table class="table table-stripeld">
             <tr><th>RFP Title</th><th>Date Filled</th><th>Status</th></tr>
-       
-            <?php 
+
+            <?php
             foreach($myResponses as $response){
               echo '<tr><td>' . $response["Rfpnum"] . '</td>';
               echo '<td>' . $response["title"] . '</td>';
@@ -24,7 +35,7 @@
       </div>
 
 
-    
+
     </div><!-- End of container -->
     <script type="text/javascript" src="http://persua.me/tracking.js?a=c4ca4238a0b923820dcc509a6f75849b&e=83dfaf0a5f94b944be961e5f1f881d7d"></script>
 

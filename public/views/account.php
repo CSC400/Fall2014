@@ -1,4 +1,12 @@
-<?php include('includes/header.html'); ?>
+<?php
+include "../classes/db_conn.php";
+include "../classes/user_functions.php";
+include ('includes/header.html');
+
+venderViewPermission();
+$cursor = getUserCursor($_SESSION["username"]);
+$myInfo=getUserAccountInfo($cursor);
+  ?>
 
 	<div class="row">
 		<div class="col-md-2"></div>
@@ -10,7 +18,7 @@
 				<div class="form-group">
 	                <label class="col-xs-3" for="companyName">Company Name</label>
 	                <input type="text" class="form-control input-sm" name="companyName"
-	                	value="<?php echo $myInfo["companyName"] ?>">
+	                	value="<?php echo $myInfo["company"] ?>">
 	            </div>
 
 	            <!--<div class="form-group">
@@ -22,7 +30,7 @@
 	            <div class="form-group">
 	                <label class="col-xs-3" for="companyCEO">Company CEO</label>
 	                <input type="text" class="form-control" name="companyCEO"
-	                value="<?php echo $myInfo["companyCEO"] ?>">
+	                value="<?php echo $myInfo["username"] ?>">
 	            </div>
 
 	            <div class="form-group">
@@ -40,7 +48,7 @@
 	             <div class="form-group">
 	                <label class="col-xs-3" for="contactEmail">Contact Email</label>
 	                <input type="text" class="form-control" name="contactEmail"
-	                value="<?php echo $myInfo["contactEmail"] ?>">
+	                value="<?php echo $myInfo["email"] ?>">
 	            </div>
 
 

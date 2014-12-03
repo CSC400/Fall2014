@@ -6,18 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Vendor Homes</title>
 
-    <link href="views/style/css/bootstrap.min.css" rel="stylesheet">
-    <link href="views/style/css/whoMeStyle.css" rel="stylesheet">
+    <link href="/views/style/css/bootstrap.min.css" rel="stylesheet">
+    <link href="includes/whoMeStyle.css" rel="stylesheet">
 
     <style>
-      
+
     </style>
 
   </head>
   <body>
       <div id="welcome">
-        <p>Hello, <i><?php echo $_SESSION["name"]; ?></i></p>
-        <form action="." method="POST">
+        <p>Hello, <i><?php echo $_SESSION["username"]; ?></i></p>
+        <form action="../classes/action.php" method="post">
           <input type="hidden" name="action" value="logout">
           <input type="submit" id="logout" value="Logout">
         </form>
@@ -29,22 +29,22 @@
       <div class="row">
         <div class="col-md-2"></div>
         <div class="col-md-8">
-          
+
         <ul class="nav nav-tabs">
           <li id="home" role="presentation">
-            <form action="." method="GET">
+            <form action="../classes/action.php" method="post">
               <input type="hidden" name="action" value="home" />
-              <input type="submit" class="btn btn-default tab" value="Home" role="presentation" />
+              <input type="submit" class="btn btn-default tab" value="home" role="presentation" />
             </form>
           </li>
           <li id="viewRfps" role="presentation">
-             <form action="." method="GET">
+             <form action="../classes/action.php" method="post">
               <input type="hidden" name="action" value="viewRfps" />
               <input type="submit" class="btn btn-default tab" value="View Rfps" role="presentation" />
             </form>
           </li>
           <li id="account" role="presentation">
-             <form action="." method="GET">
+             <form action="../classes/action.php" method="post">
               <input type="hidden" name="action" value="account" />
               <input type="submit" class="btn btn-default tab" value="Account" role="presentation" />
             </form>

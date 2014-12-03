@@ -26,12 +26,13 @@
 		</div>
 	</div>
 
-	<form action="../includes/auth.php" method ="post">
+	<form action="../classes/action.php" method ="post">
+		<input type="hidden" name="action" value="vlogin" />
 		<label>Username:</label>
-		<input name="name" type="text" placeholder="Type Username Here" required autofocus>
+		<input name="username" type="text" placeholder="Type Username Here" required autofocus>
 		<br>
 		<label>Password:</label>
-		<input name="pin" type="password" placeholder="Type Password Here" required autocomplete="off" >
+		<input name="password" type="password" placeholder="Type Password Here" required autocomplete="off" >
 		<br>
 		<input class="submit" name="submit" type="submit" value="vlogin">
 

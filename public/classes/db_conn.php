@@ -1,8 +1,10 @@
 <?php
-
-$dbh = null;
+session_start();
+session_regenerate_id();
+$dbh;
 
 function dbconn(){
+    global $dbh;
     try{
         $mongo = new MongoClient("mongodb://devops:csc400@ds039960.mongolab.com:39960/csc400");
         $dbh = $mongo->selectDB('csc400');
@@ -13,7 +15,10 @@ function dbconn(){
     }
 }
 
-function dbclose(){
-    $dbh=null;
-}
+// function dbclose(){
+//     global $dbh;
+//     $dbh=null;
+// }
+
+
 ?>
